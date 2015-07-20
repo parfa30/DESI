@@ -91,7 +91,7 @@ def frd_fit(directory):
     plt.legend()
 
     #Save image of the plot in the directory
-    #plt.savefig(directory+'/FWHM_'+os.path.basename(directory))
+    plt.savefig(directory+'/FWHM_'+os.path.basename(directory))
     
     plt.show()
     return fit3
@@ -141,12 +141,12 @@ def frd_trend(fin):
 
 
 #Uncomment if you want to look at one measurement
-#plot_directory = str(input('directory: '))
-#frd_fit(plot_directory)
+plot_directory = str(input('directory: '))
+frd_fit(plot_directory)
 
 #Uncomment if you want to look at the trend at a given f_in.
 #It will prompt you for directories.
-frd_trend(3.9)
+#frd_trend(3.9)
 
     
     
